@@ -37,15 +37,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-6 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-3 col-sm-3 align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-3 col-sm-3 align-self-center">
-                    <a role="button" type="submit" href="#reserve_a_table" 
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a role="button" type="submit" href="#reserve" 
                         class="btn btn-sm btn-block btn-warning font-weight-bold"> Reserve Table </a>
                 </div>
 
@@ -101,55 +101,51 @@
                     </div>
                 </div>
             </div>
+            <span id="reserve"></span>
         </div>
 
-        <div class="row row-content align-items-center" id="reserve_a_table">
-            <div class="col-12 col-sm-8 mx-auto">
+        <div class="row row-content align-items-center"">
+            <div class="col-12 offset-sm-2 col-sm-8">
                 <div class="card">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="form card-body">
-                        <dl class="form-group row"> 
-                            <dt class="col-2"> Number of Guests </dt> 
-                            <dd class="col-6">
-                                <div class="input-group mb-3"> 
-                                    <input type="radio" class="custom-control" id="radio1" name="numOfTables" value="1">
-                                    <label for="numOfTables"> <p><strong> 1 </strong> &nbsp;</p> </label>
-                                    <input type="radio" class="custom-control" id="radio2" name="numOfTables" value="2">
-                                    <label for="numOfTables"> <p><strong> 2 </strong> &nbsp; </p> </label>
-                                    <input type="radio" class="custom-control" id="radio3" name="numOfTables" value="3">
-                                    <label for="numOfTables"> <p><strong>  3 </strong> &nbsp; </p> </label>
-                                    <input type="radio" class="custom-control" id="radio4" name="numOfTables" value="4">
-                                    <label for="numOfTables"> <p><strong> 4 </strong>&nbsp; </p> </label>
-                                    <input type="radio" class="custom-control" id="radio5" name="numOfTables" value="5">
-                                    <label for="numOfTables"> <p><strong> 5 </strong> &nbsp;</p> </label>
-                                    <input type="radio" class="custom-control" id="radio6" name="numOfTables" value="6">
-                                    <label for="numOfTables"> <p><strong> 6</strong> </p> </label>
+                    <h3 class="card-header text-white bg-warning">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">
+                                    <label for="reserve" class="col-form-label"><strong>Number of Guests</strong></label>
                                 </div>
-                            </dd>
-                        </dl>
-                        <dl class="form-group row"> 
-                            <dt class="col-2">Date and Time</dt> 
-                            <dd class="col-9">
-                                <div class="d-inline-block">
+                                <div class="form-check col-12 col-sm-6 mt-2">
+                                    <input class="form-check-radio" type="radio" name="reserve" id="res1" value="1">
+                                    <label class="form-check-label" for="res1">1</label>
+                                    <input class="form-check-radio ml-2" type="radio" name="reserve" id="res2" value="2">
+                                    <label class="form-check-label" for="res2">2</label>
+                                    <input class="form-check-radio ml-2" type="radio" name="reserve" id="res3" value="3">
+                                    <label class="form-check-label" for="res3">3</label>
+                                    <input class="form-check-radio ml-2" type="radio" name="reserve" id="res4" value="4">
+                                    <label class="form-check-label" for="res4">4</label>
+                                    <input class="form-check-radio ml-2" type="radio" name="reserve" id="res5" value="5">
+                                    <label class="form-check-label" for="res5">5</label>
+                                    <input class="form-check-radio ml-2" type="radio" name="reserve" id="res6" value="6">
+                                    <label class="form-check-label" for="res6">6</label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">
+                                    <label for="" class="col-form-label"><strong>Date and Time</strong></label>
+                                </div>
+                                <div class="col-12 col-sm-3 mt-sm-2">
                                     <input type="text" class="form-control" id="date" name="date" placeholder="Date">
                                 </div>
-                                <div class="d-inline-block">
+                                <div class="col-12 col-sm-3 mt-sm-2">
                                     <input type="text" class="form-control" id="time" name="time" placeholder="Time">
                                 </div>
-                            </dd> 
-                        </dl>
-                        <dl class="form-group row"> 
-                            <dt class="col-2">&nbsp;</dt>
-                            <dd class="col-3"> 
-                                <div>
-                                    <button type="submit" class="btn btn-primary"> Reserve </button>
-                                </div>
-                            </dd>
-                        </dl>
+                            </div>
+                        </form>
+                        <a href="#" class="btn btn-primary offset-sm-2"><strong>Reserve</strong></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
 
     <footer class="footer">
